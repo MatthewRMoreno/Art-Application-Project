@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #4a4a4a;
+    /* background: #4a98f7; */
+}
+.container{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    max-width: 1050px;
+}
+section{
+    background: #fff;
+    border-radius: 7px;
+}
+.tools-board{
+    width: 210px;
+    padding: 15px 22px 0;
+}
+.tools-board .row{
+    margin-bottom: 20px;
+}
+.row .options{
+    list-style: none;
+    margin: 10px 0 0 5px;
+}
+.row .options .option{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.option:is(:hover, .active) img{
+    filter: invert(17%) sepia(90%) saturate(3000%) hue-rotate(900deg) brightness(100%) contrast(100%);
+}
+.option :where(span, label){
+    color: #5a6168;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.option #fill-color{
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+}
+.drawing-board{
+    flex: 1;
+}
